@@ -6,7 +6,7 @@ export default function SignIn() {
     <div>
       <button onClick={() =>
         signIn('google', {
-          callbackUrl: new URL('/profile', window.location.origin).href,
+          callbackUrl: new URL('/profile', process.env.NEXT_PUBLIC_BASE_URL || window.location.origin).href,
         })}>
         Sign in with Google
       </button>
