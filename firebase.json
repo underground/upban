@@ -15,6 +15,12 @@
       "npm --prefix \"$PROJECT_DIR\" install",
       "npm --prefix \"$PROJECT_DIR\" run build"
     ],
-    "runtime": "nodejs10"
+    "runtime": "nodejs10",
+    "ignore": [
+      ".firebase/**",
+      ".firebaserc",
+      "firebase.json",
+      "**/node_modules/**"
+    ]
   }
 }
